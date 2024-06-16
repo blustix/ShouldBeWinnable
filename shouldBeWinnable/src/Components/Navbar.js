@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className = 'flex justify-between items-center h-12 bg-white text-black relative shadow-sm font-mono'>
+        <nav className = 'flex justify-between items-center h-12 bg-black text-zinc-200 relative shadow-sm font-mono'>
             <Link to='/' className='pl-8'>
                 Should Be Winnable
             </Link>
@@ -14,9 +14,9 @@ const Navbar = () => {
             </div>
             <div className='pr-8 md:block hidden'>
                 <Link className='p-4' to="/">Home</Link>
-                <Link className='p-4' to="/menu">Menu</Link>
                 <Link className='p-4' to="/about">About</Link>
-                <Link className='p-4' to="/pog">PogChamp</Link>
+                <Link className='p-4' to="/freebets">Free Bets</Link>
+                <Link className='p-4' to="/arbitrage">Arbitrage</Link>
             </div>
         </nav>
     )
