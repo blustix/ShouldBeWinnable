@@ -14,4 +14,3 @@ Betting services often give away free credits. We can use the free credits on mu
 2. Finding discrepencies in different matchbooks' odds:
 Sometimes, different services may have different odds for the same event, and thus different payouts. We can find and use these discrepencies to make a profit.
 
-Todo: Connect Drogon (C++ overhead sad)
