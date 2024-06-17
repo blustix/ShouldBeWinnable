@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className = 'flex justify-between items-center h-12 bg-black text-zinc-200 relative shadow-sm font-mono'>
+        <nav className = 'flex justify-between items-center h-12 bg-black text-zinc-200 relative shadow-sm font-mono border-b-2 border-color-blue-500'>
             <Link to='/' className='pl-8'>
                 Should Be Winnable
             </Link>
