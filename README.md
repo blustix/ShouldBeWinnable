@@ -20,8 +20,15 @@ Some Screenshots from the App:
 
 ![Getting Started Section of Should Be Winnable](https://github.com/blustix/ShouldBeWinnable/blob/main/shouldBeWinnable/images/landingpage2.png "Graph 2")
 
-How to use the Tools:
+How to Use
 
 Free Credits:
+Insert the necessary information, how many credits you have, and on which sportsbooks
+Use calculator to maximize extracted value, turning free credits into real money
 
-1. Insert the necessary information, how many credits you have, and on which sportsbooks
+Arbitrage:
+WIP: Limited by API calls from the platform I am using, coverage is not yet ideal.
+Automatically calls API to check for latest odds at certain time intervals.
+Notifications are sent out when opportunities are found, must act quickly as odds for these may change quickly.
+
+Note: Backend code out of date, working on adding features to avoid getting caught.
