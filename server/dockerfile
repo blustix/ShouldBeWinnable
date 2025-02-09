@@ -1,0 +1,32 @@
+FROM ubuntu:22.04
+
+RUN apt-get update && \
+    apt-get install -y build-essential cmake libjsoncpp-dev uuid-dev openssl libssl-dev zlib1g-dev
+
+WORKDIR /app
+COPY . .
+
+RUN git clone https://github.com/an-tao/drogon && \ 
+    cd drogon && \
+    git submodule update --init && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && make install 
+
+RUN drogon_ctl create project should_be_winnable
+
+ENV LANG=en_US.UTF-8 \
+    LANGUAGE=en_US:en \
+    LC_ALL=en_US.UTF-8 \
+    CC=gcc-8 \
+    CXX=g++-8 \
+    AR=gcc-ar-8 \
+    RANLIB=gcc-ranlib-8 \
+    BOOST_INCLUDE_DIR="${HOME}/opt/boost_1_67_0" \  
+    IROOT=/install
+
+ADD deploy.sh ./app/deploy.sh  
+RUN chmod +x ./app/deploy.sh  
+EXPOSE 8080
+CMD sh ./app/deploy.sh && tail -f /dev/null
