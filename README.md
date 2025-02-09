@@ -30,5 +30,8 @@ Arbitrage:
 WIP: Limited by API calls from the platform I am using, coverage is not yet ideal.
 Automatically calls API to check for latest odds at certain time intervals.
 Notifications are sent out when opportunities are found, must act quickly as odds for these may change quickly.
-
 Note: Backend code out of date, working on adding features to avoid getting caught.
+
+Running locally: Need to set your own API key. I'm using the-odds-api but there are other choices as well
+Docker should take care of all of the yucky C++ overhead, but there might be a bunch of local stuff I did that's not documented
+Built originally on windows, definitely would not recommend 💀
